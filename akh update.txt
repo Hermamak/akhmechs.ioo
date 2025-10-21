@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKH Autos - Super Car Rentals</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+
+        /* Header */
+        header {
+            background-color: #000000;
+            color: #d4af37; /* Gold color for the title */
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 3px;
+        }
+
+        /* Main Content Area */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        /* NEW: Introductory Paragraph */
+        .intro-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto 50px auto; /* Adds space above and below */
+            color: #cccccc;
+        }
+
+        .container h2 {
+            font-size: 2.5em;
+            color: #d4af37;
+            margin-bottom: 30px;
+        }
+
+        /* Car Grid */
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* UPDATED: Link styling for the cards */
+        .car-link {
+            text-decoration: none; /* Removes the ugly blue underline from the link */
+        }
+
+        .car-card {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #ffffff; /* Ensures text inside the link is white */
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(212, 175, 55, 0.2); /* Adds a subtle gold glow on hover */
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 20px;
+        }
+
+        .car-info h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #d4af37;
+        }
+
+        .car-info p {
+            margin-bottom: 0;
+            color: #cccccc;
+        }
+        
+        /* NEW: "Call to Action" Button */
+        .cta-button {
+            display: inline-block;
+            margin-top: 50px; /* Adds space above the button */
+            padding: 15px 35px;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ffffff; /* Changes to white on hover */
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 3px solid #d4af37;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AKH AUTOS</h1>
+    </header>
+
+    <main class="container">
+    
+        <p class="intro-text">
+            Forget the destination. At AKH Autos, the journey <em>is</em> the event. We offer more than just cars; we provide an adrenaline-fueled experience behind the wheel of the world's most exotic and powerful machines. Your dream drive awaits.
+        </p>
+    
+        <h2>Our Featured Fleet 🏎️</h2>
+        
+        <div class="car-grid">
+            
+            <a href="#" class="car-link">
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop" alt="Red Ferrari">
+                    <div class="car-info">
+                        <h3>Ferrari 488 GTB</h3>
+                        <p>Experience pure Italian passion and performance. The ultimate driving machine.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="car-link">
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1617469747533-52473a216f44?q=80&w=2071&auto=format&fit=crop" alt="Orange McLaren">
+                    <div class="car-info">
+                        <h3>McLaren 720S</h3>
+                        <p>With its stunning design and blistering speed, the 720S is a true masterpiece of engineering.</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="car-link">
+                <div class="car-card">
+                     <img src="https://images.unsplash.com/photo-1555516339-71a63b15c13e?q=80&w=1974&auto=format&fit=crop" alt="Yellow Porsche">
+                    <div class="car-info">
+                        <h3>Porsche 911 GT3</h3>
+                        <p>A track-focused legend that delivers an unparalleled driving experience on any road.</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        
+        <a href="#" class="cta-button">Explore Full Fleet</a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AKH Autos. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
